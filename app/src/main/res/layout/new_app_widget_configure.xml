@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="16dp"
+    android:weightSum="1">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/configure" android:layout_marginBottom="8dp" />
+
+    <EditText android:id="@+id/appwidget_text" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:inputType="text" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Select Background Color" android:layout_marginBottom="8dp" />
+    <RadioGroup
+        android:id="@+id/backgroundcolorgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/backgroundblue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLUE"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/backgroundred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RED"
+
+            />
+        <RadioButton
+            android:id="@+id/backgroundyellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YELLOW"
+
+            />
+        <RadioButton
+            android:id="@+id/backgroundgreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIGHT GREEN"
+
+            />
+
+
+    <RadioButton
+        android:id="@+id/backgroundpurple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PURPLE"
+
+        />
+        <RadioButton
+            android:id="@+id/backgroundbrown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BROWN"
+
+            />
+
+        <RadioButton
+            android:id="@+id/backgroundpink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PINK"
+
+            />
+        <RadioButton
+            android:id="@+id/backgroundorange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORANGE"
+
+            />
+
+</RadioGroup>
+
+    <Button android:id="@+id/add_button" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/add_widget"
+        android:layout_marginTop="8dp" />
+
+
+
+</LinearLayout>

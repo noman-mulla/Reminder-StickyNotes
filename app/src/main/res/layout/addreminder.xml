@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Reminder"
+
+            />
+        <TextView
+            android:id="@+id/setdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:textColor="#56A5EC"
+            android:text="Set date"
+            android:gravity="center"
+            />
+        <DatePicker
+            android:id="@+id/daydate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/settime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:textColor="#56A5EC"
+            android:text="Set time"
+            android:gravity="center"
+            />
+        <TimePicker
+            android:id="@+id/daytime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/repeattext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:textColor="#56A5EC"
+            android:text="Repeat"
+            android:gravity="center"
+            />
+        <RadioGroup
+            android:id="@+id/repeatgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:id="@+id/repeatnever"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Never"
+                android:checked="true"
+
+                />
+            <RadioButton
+                android:id="@+id/repeatfifteenmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every Fifteen Minutes"
+
+                />
+            <RadioButton
+                android:id="@+id/repeathalfhour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every half hour"
+
+                />
+            <RadioButton
+                android:id="@+id/repeathour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every hour"
+
+                />
+            <RadioButton
+                android:id="@+id/repeatdaily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily"
+
+                />
+            <RadioButton
+                android:id="@+id/repeatweekly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weekly"
+
+                />
+
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/bremind"
+            android:text="Remind Me"
+            style="@style/btnStyleBeige"
+
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
